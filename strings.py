@@ -22,3 +22,13 @@ print("doctor"in txt)
 if 'doctor'not in txt:
     print("No.'doctor'is not present")
     
+#F string
+Age = 21
+txt=F"my name is Ian ,iam {Age} years old"
+print(txt)
+#placeholder and modifiers
+price=35
+Txt=f"the product is {price:.2f}"
+print(Txt)
+text=f"the price of the product is {20 * 35}"
+print(text)
