@@ -86,7 +86,19 @@ del library        #removes the entire list
 
 library=["books","jornals","magazines","research area"]
 library.clear
-print(library)
+print(library)        #empties the list
+
+#loop list
+library=["books","jornals","magazines","research area"]
+for x in library:    #prints the whole list
+ print(x)
+
+ library=["books","jornals","magazines","research area"]
+ for i in range(len(library)):
+    print(library[i])   #Print all items by referring to their index number
+
+
+
 
 
 
