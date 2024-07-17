@@ -87,6 +87,81 @@ def tri_recursion(k):
 print("\n\nRecursion Example Results ")
 tri_recursion(6)
 
+def greet():
+    print("Hello there")
+    print("How are you doing")
+
+greet()
+
+def greet(fname,lname):
+    print(f"Hi {fname} {lname}")
+    print("Welcome aboard")
+
+
+greet("Ian","Mutari")
+greet("Allan","Mutari")
+
+def sum(a,b):
+    total=a+b
+    return total
+
+n=sum(12,14)
+print("total =",n)
+m=sum(12,19)
+print("total =",m)
+
+def function1(x):
+    return 2**x
+
+a=function1(3)
+print("value =",a)
+b=function1(4)
+print("value =",b)
+
+def calculate_total(exp):          #function argument(input)
+    total=0
+    for item in exp :
+        total=total+item
+    return total                    #return value(output)
+
+Kiplagat_exp=[12,123,678]
+Ian_exp=[90,30,128]
+
+Kiplagat_total=calculate_total(Kiplagat_exp)
+Ian_total=calculate_total(Ian_exp)
+
+print("KIplagat's total expenses is ",Kiplagat_total)
+print("Ian's total expenses is ",Ian_total)
+
+#bmi calculator
+name1="Alvin "
+height_m1=2
+weight_kg1=90
+
+name2="Marion "
+height_m2=1.80
+weight_kg2=80
+
+name3="Rachel "
+height_m3=1.60
+weight_kg3=70
+
+def bmi_calculator(name,height_m,weight_kg):
+    bmi=weight_kg/(height_m**2)
+    print ("bmi: ")
+    print(bmi)
+    if bmi<25 :
+        return name + "is not overweight"
+    else:
+        return name + "is overweight"
+
+result1=bmi_calculator(name1,height_m1,weight_kg1)
+result2=bmi_calculator(name2,height_m2,weight_kg2)
+result3=bmi_calculator(name3,height_m3,weight_kg3)
+
+print(result1)
+print(result2)
+print(result3)
 
 
 
